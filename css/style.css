@@ -1,0 +1,72 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 55px;
+}  
+
+h1{
+    color : rgb(68, 169, 202);
+    display: inline-block;
+}
+
+#logo-home{
+    height: 55px;
+    vertical-align: middle;
+    padding: 5px 29px;
+    margin-right: 5px;
+    border-radius: 30px ;
+    background: rgb(68, 169, 202);
+}
+
+main{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    font-family: Poppins, sans-serif;
+    display: block;
+    margin: 10px auto;
+    width: 220px;
+    padding: 15px 0;
+    font-size: 15px;
+    color: white;
+    background : rgb(68, 169, 202);
+    font-weight : bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor : pointer;
+}
+
+.botao:hover{
+    background :white;
+    transform : scale(1.2)  rotatex(360deg);
+    color : rgb(68, 169, 202);
+    border: 1px solid rgb(68, 169, 202);
+}
+
+.invisivel{
+    display: none;
+}
+
+footer{
+    background: lightgrey;
+    text-align : center;
+    padding: 15px;
+}
+#github, #linkedin{
+    margin: 10px 10px 0px 10px; 
+    display: flexbox;
+    height: 40px;
+}
+#github:hover, #linkedin:hover{
+    transform : scale(1.2);
+    cursor : pointer;
+
+}
