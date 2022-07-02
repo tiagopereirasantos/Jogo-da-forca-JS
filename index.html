@@ -18,25 +18,37 @@
 
     <main>
         <div id="tela-inicial">
-            <button id="botao-jogar" class="botao botao-jogar">Começar a jogar</button>
-            <button id="botao-adicionar" class="botao botao-adicionar">Adicionar nova palavra</button>
+            <button id="botao-jogar-home" class="botao botao-jogar" onclick="iniciaJogo()">Começar a jogar</button>
+            <button id="botao-adicionar-home" class="botao botao-adicionar" onclick="telaAdicionarPalavra()">Adicionar
+                nova palavra</button>
         </div>
 
         <div id="tela-forca" class="invisivel">
-
+            <canvas width="1200px" height="300px"></canvas>
+            <section class="btns-forca">
+                <button id="botao-novoJogo" class="botao">Novo jogo</button>
+                <button id="botao-desistir" class="botao">Desistir</button>
+            </section>
         </div>
 
-        <div id=tela-inserir class="invisivel">
-
+        <div id="tela-inserir" class="invisivel">
+            <label>Insira a palavra: <input id="input-inserir" type="text" maxlength="8"></label>
+            <p><span>&#9432 </span>Máximo de 8 letras</p>
+            <button id="botao-inserir" class="botao btn-inserir">Inserir</button>
+            <button id="botao-jogar" class="botao" onclick="iniciaJogo()">Ir para o jogo</button>
         </div>
     </main>
 
     <footer>
         <p>&copy Tiago Pereira Santos</p>
-        <a href="https://github.com/tiagopereirasantos" target=" _blank" rel="noopener noreferrer"><img id="github" src="imagens/logo-github.png"></a>
-        <a href="https://www.linkedin.com/in/tiago-pereira-santos/" target="_blank" rel="noopener noreferrer"><img id="linkedin" src="imagens/logo-linkedin.png"></a>
+        <a href="https://github.com/tiagopereirasantos" target=" _blank" rel="noopener noreferrer"><img id="github"
+                src="imagens/logo-github.png"></a>
+        <a href="https://www.linkedin.com/in/tiago-pereira-santos/" target="_blank" rel="noopener noreferrer"><img
+                id="linkedin" src="imagens/logo-linkedin.png"></a>
     </footer>
 </body>
 <script src="script/iniciar-jogo.js"></script>
+<script src="script/adicionar-palavra.js"></script>
+
 
 </html>

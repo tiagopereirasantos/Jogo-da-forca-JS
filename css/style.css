@@ -2,13 +2,13 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 header{
-    margin-top: 10px;
+    padding-top: 9px;
     text-align: center;
-    font-size: 55px;
+    font-size: 55px;   
 }  
 
 h1{
-    color : rgb(68, 169, 202);
+    color : #44A9CA;
     display: inline-block;
 }
 
@@ -18,7 +18,7 @@ h1{
     padding: 5px 29px;
     margin-right: 5px;
     border-radius: 30px ;
-    background: rgb(68, 169, 202);
+    background: #44A9CA;
 }
 
 main{
@@ -27,16 +27,16 @@ main{
     justify-content: center;
     align-items: center;
 }
-
+    
 .botao {
     font-family: Poppins, sans-serif;
     display: block;
     margin: 10px auto;
-    width: 220px;
+    width: 253px;
     padding: 15px 0;
     font-size: 15px;
     color: white;
-    background : rgb(68, 169, 202);
+    background : #44A9CA;
     font-weight : bold;
     border: none;
     border-radius: 5px;
@@ -44,11 +44,32 @@ main{
     cursor : pointer;
 }
 
-.botao:hover{
+.botao:not(#botao-inserir,#botao-desistir):hover {
     background :white;
     transform : scale(1.2)  rotatex(360deg);
-    color : rgb(68, 169, 202);
-    border: 1px solid rgb(68, 169, 202);
+    color : #44A9CA;
+    border: 1px solid #44A9CA;
+}
+
+.btns-forca {
+    text-align: center;
+}
+.btns-forca .botao{
+    display: inline-block;
+    margin: 15px 15px 0px 15px;
+}
+
+#botao-desistir:active{
+    background :red;
+    transition: 0.1s;
+    transform : scale(1.05);
+    color : white;
+}
+
+canvas{
+    border: 3px solid #44A9CA;
+    display: block;
+    margin: auto;
 }
 
 .invisivel{
@@ -58,7 +79,8 @@ main{
 footer{
     background: lightgrey;
     text-align : center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 9px;
 }
 #github, #linkedin{
     margin: 10px 10px 0px 10px; 
@@ -69,4 +91,31 @@ footer{
     transform : scale(1.2);
     cursor : pointer;
 
+}
+
+#tela-inserir input{
+    display:inline-block;
+    color : white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border: 0px;
+    background-color: #44A9CA;
+    height: 12px;
+    width: 100px;
+    border-radius: 8px; 
+}
+#tela-inserir p{
+    font-weight: bold;
+    color : rgba(38, 38, 38, 0.694);
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.btn-inserir:active{
+    background :green;
+    transition: 0.1s;
+    transform : scale(1.05);
+    color : white;
 }

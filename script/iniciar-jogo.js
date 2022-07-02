@@ -1,7 +1,13 @@
-var botaoComecar = document.querySelector("#botao-jogar");
+var telaInicial = document.querySelector("#tela-inicial");
+var telaInserir = document.querySelector("#tela-inserir");
+var telaForca = document.querySelector("#tela-forca");
 
-botaoComecar.addEventListener("click", function(){
-    var telaInicial = document.querySelector("#tela-inicial")
+function iniciaJogo(){
+    telaForca.classList.remove("invisivel");
+    telaInicial.classList.add("invisivel");
+    telaInserir.classList.add("invisivel");
 
-    telaInicial.classList.add("invisivel")
-})
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+}   
+
